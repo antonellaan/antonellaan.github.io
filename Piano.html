@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=d
+    evice-width, initial-scale=1.0" />
+
+    <title> MI PRIMER PIANO </title>
+    <style>
+        div {
+            display: flex;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Oswald', sans-serif;
+        }
+        html, body{
+          display:flex;
+          flex-direction: column;
+          height: 100%;
+          background:#bcd1e0;
+
+
+        }
+        footer{
+          margin-top: auto;
+          background:#5e7c91;
+          display: flex;
+
+        }
+        .footer__section{
+          flex:1;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: auto;
+        }
+        .main-content__img--full-width {
+            width: 50%;
+            align-items: center;
+        }
+        body{
+          margin: 0;
+        }
+        section{
+          align-items: center;
+          width: 100%;
+
+        }
+        aside{
+          display: block;
+        }
+
+        title{
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        #main-content{
+          flex: 6;
+          padding:10px 20% 10px 10px;
+        }
+
+        #header {
+          display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+        #main-content-container{
+          display: flex;
+
+          }
+
+        #links-sidebar{
+          background: #82a4b8;
+          flex: 2;
+          width: 500px;
+
+
+        }
+
+        #footer{
+          padding: 0 20px 20px 20px;
+          margin-top: auto;
+          display: flex;
+          background: #f3f3f3;
+
+        }
+
+
+        #navigation-bar ul {
+         margin: 0;
+         padding: 0;
+         border: 0px solid white;
+         background-color: white;
+         width: auto;
+     }
+
+
+
+#navigation-bar li a {
+    display: block;
+    color: #665;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#main-content {
+            flex: 6;
+            padding: 10px 20% 10px 10px;
+        }
+
+
+        #pianoLayout {
+          height:18.875em;
+          width:34em;
+          margin:5em auto;
+          padding:3em 0 0 3em;
+          position:relative;
+          border:1px solid #160801;
+          border-radius:1em;
+          box-shadow:0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5)
+        }
+
+   .pianoTecla {
+     margin:0;
+     padding:0;
+     list-style:none;
+     position:relative;
+     float:left
+   }
+
+   ul .white {
+     height:16em;
+     width:4em;
+     z-index:1;
+     border-left:1px solid #bbb;
+     border-bottom:1px solid #bbb;
+     border-radius:0 0 5px 5px;
+     box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
+     background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+   }
+
+   ul .white:active {
+     border-top:1px solid #777;
+     border-left:1px solid #999;
+     border-bottom:1px solid #999;
+     box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+     background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
+   }
+
+   .black {
+     height:8em;
+     width:2em;
+     margin:0 0 0 -1em;
+     z-index:2;
+     border:1px solid #000;
+     border-radius:0 0 3px 3px;
+     box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+     background:linear-gradient(45deg,#222 0%,#555 100%)
+   }
+
+   .black:active {
+     box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -2px 2px 3px rgba(0,0,0,0.6) inset,0 1px 2px rgba(0,0,0,0.5);
+     background:linear-gradient(to right,#444 0%,#222 100%)
+   }
+
+   .a,.g,.f,.d,.c {
+     margin:0 0 0 -1em
+   }
+
+   ul li:first-child {
+     border-radius:5px 0 5px 5px
+   }
+   #navigation-bar li {
+       display: inline-block;
+   }
+
+
+
+    </style>
+
+</head>
+<body>
+<header id="header">
+    <h1> Mi Primer Piano </h1>
+    <h2> Haz click en las teclas!</h2> <br>
+
+</header>
+<nav id="navigation-bar" class="navigation-bar">
+  <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li> <a href="Discography.html"> Discografia </a></li>
+        <li><a href="Piano.html"> Piano </a></li>
+
+  </ul>
+</nav>
+
+
+<div id="main-content-container">
+  <aside id="links-sidebar" float: left;>
+
+  </aside>
+
+    <section id="main-content">
+
+    <div>
+
+    <p> Hola! Mi nombre es <span id="name"></span>, tengo
+         <span id="age"></span> años y <span id="likesMusic"></span>. Este es mi
+          primer proyecto con Javascript. Según Ageify, tengo <span id="guessedAge"></span> años, esto es
+          <span id="isGuessRight"></span>
+        </p>
+      </div>
+
+      <ul id="pianoLayout" class="set">
+          <li onclick=" jsNota(174.614)" class="white b pianoTecla"></li>
+          <li onclick=" jsNota(184.997)" class="black as pianoTecla"></li>
+          <li onclick=" jsNota(195.998)" class="white a pianoTecla"></li>
+          <li onclick=" jsNota(207.652)" class="black gs pianoTecla"></li>
+          <li onclick=" jsNota(220.000)" class="white g pianoTecla"></li>
+          <li onclick=" jsNota(233.082)" class="black fs pianoTecla"></li>
+          <li onclick=" jsNota(246.942)" class="white f pianoTecla"></li>
+          <li onclick=" jsNota(261.626)" class="white e pianoTecla"></li>
+          <li onclick=" jsNota(277.183)" class="black ds pianoTecla"></li>
+          <li onclick=" jsNota(293.665)" class="white d pianoTecla"></li>
+          <li onclick=" jsNota(311.127)" class="black cs pianoTecla"></li>
+          <li onclick=" jsNota(329.628)" class="white c pianoTecla"></li>
+  </ul>
+<script type="text/javascript">
+var context= new AudioContext();
+
+function jsNota(frecuencia){
+        var o= context.createOscillator();
+        g=context.createGain();
+        o.connect(g);
+        o.type="sawtooth";
+        o.frequency.value=frecuencia;
+        g.connect(context.destination);
+        o.start(0);
+        g.gain.exponentialRampToValueAtTime(0.00001,context.currentTime +1.5);
+    }
+    let myName = 'Antonella';
+    const nameSpan = document.getElementById('name');
+    nameSpan.textContent = myName
+    let myAge = 19;
+    const ageSpan = document.getElementById ('age');
+    ageSpan.textContent = myAge
+    let likesMusic = true;
+    let likesMusicText;
+    let guessedAge = 51;
+    const guessedAgeSpan = document.getElementById('guessedAge');
+    guessedAgeSpan.textContent = guessedAge
+    let isGuessRight=19
+    if (isGuessRight === 19) {
+  const guessed = document.getElementById("isGuessRight");
+  guessed.textContent = "falso";
+} else {
+  const guessed = document.getElementById("isGuessRight");
+  guessed.textContent = "verdadero";
+}
+    if(likesMusic === true){
+      likesMusicText = 'me encanta la musica';
+   const likesMusic = document.getElementById("likesMusic");
+   likesMusic.textContent = 'me encanta la musica';
+    } else{
+      likesMusicText = 'no me encanta la musica';
+      const likesMusic = document.getElementById("likesMusic");
+      likesMusic.textContent = 'falso'
+
+    }
+
+
+</script>
+
+    </section>
+</div>
+
+<footer id="footer">
+  <div class="footer__section"> Mis redes <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg fill="#13224F" width="36" height="36" version="1.1" id="lni_lni-facebook-original" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<path d="M59.5,1h-55C2.5,1,1,2.6,1,4.5v55c0,2,1.6,3.5,3.5,3.5h29.6V38.9h-8v-9.3h8v-6.9c0-8,4.8-12.4,12-12.4
+	c2.4,0,4.8,0.1,7.2,0.4V19h-4.8c-3.8,0-4.6,1.8-4.6,4.5v5.9H53l-1.3,9.4h-8v23.8h15.8c2,0,3.5-1.5,3.5-3.5V4.5
+	C62.9,2.5,61.3,1,59.5,1z"/> <p> Facebook</p>
+</svg>
+<div>
+
+</div>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg fill="#13224F" width="36" height="36" version="1.1" id="lni_lni-instagram-filled" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<g>
+	<ellipse cx="32.1" cy="32" rx="11.6" ry="11.6"/>
+	<path d="M44.7,1H19.3C9.2,1,1,9.2,1,19.3v25.2C1,54.8,9.2,63,19.3,63h25.2C54.8,63,63,54.8,63,44.7V19.3C63,9.2,54.8,1,44.7,1z
+		 M32.1,47.2c-8.5,0-15.2-6.9-15.2-15.2s6.8-15.2,15.2-15.2c8.3,0,15.1,6.9,15.1,15.2S40.5,47.2,32.1,47.2z M53.1,18.2
+		c-1,1.1-2.5,1.7-4.2,1.7c-1.5,0-3-0.6-4.2-1.7C43.6,17.1,43,15.7,43,14s0.6-3,1.7-4.2C45.8,8.6,47.2,8,48.9,8
+		c1.5,0,3.1,0.6,4.2,1.7c1,1.3,1.7,2.8,1.7,4.4C54.7,15.7,54.1,17.1,53.1,18.2z"/>
+	<path d="M49,11.6c-1.3,0-2.4,1.1-2.4,2.4s1.1,2.4,2.4,2.4c1.3,0,2.4-1.1,2.4-2.4S50.4,11.6,49,11.6z"/> <p><a href="https://www.instagram.com/antonellaan_/"style="color:black;">Instagram</a></p>
+</g>
+</svg>
+
+</div>
+<div class="footer__contact-form footer__section">
+      <h2>Contacto</h2>
+      <div>
+          <form>
+              <label for="contactEmail"> Correo electronico:</label>
+              <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+              <label for="contactMessage"> Mensaje:</label>
+              <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+              <input type="submit" value="Enviar">
+          </form>
+      </div>
+  </div>
+  <div class="footer__more-sites footer__section">
+      <h2>Comentarios</h2>
+      <form>
+        <label for="comment"> Comentarios:</label>
+        <textarea name="comment" rows="4" cols="50"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+  </div>
+
+</footer>
+
+
+</body>
+</html>
